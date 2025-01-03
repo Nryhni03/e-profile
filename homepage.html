@@ -12,12 +12,50 @@
     <!----===== Boxicons CSS ===== -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
     <!--<title>Dashboard Sidebar Menu</title>--> 
 </head>
 
 <style>
-/* ===== Team Card ===== */
-.card-container {
+        .hero-section {
+        background: url('img/UITM.jpg');
+        background-size: cover;
+        height: 50vh;
+        width: 100%; /* Adjust width */
+        color: rgb(241, 236, 236);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    /* Semi-transparent background overlay */
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 4, 15); /* Adjust the alpha for transparency */
+        z-index: -1; /* Keep the background behind the content */
+    }
+
+    .hero-section h1 {
+        font-weight: bold; /* Make the heading bold */
+        font-size: 3.5rem;
+        color: rgb(235, 235, 235); /* Ensure text is visible on darker backgrounds */
+    }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+ .card-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
@@ -25,7 +63,7 @@
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: #e0cdff;
   color: #000000;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -107,19 +145,19 @@
                 </li>
 
                 <ul class="menu-links">
-                  <li class="nav-link">
-                      <a href="homepage.html">
-                          <i class='bx bxs-home icon'></i>
-                          <span class="text nav-text">Home</span>
-                      </a>
-                  </li>
+                    <li class="nav-link">
+                        <a href="homepage.html">
+                            <i class='bx bxs-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
 
-                  <li class="nav-link">
-                      <a href="home.html">
-                          <i class='bx bx-list-ul icon'></i>                            
-                          <span class="text nav-text">List Profile</span>
-                      </a>
-                  </li>
+                    <li class="nav-link">
+                        <a href="home.html">
+                            <i class='bx bx-list-ul icon'></i>                            
+                            <span class="text nav-text">List Profile</span>
+                        </a>
+                    </li>
 
                     <li class="nav-link">
                         <a href="digital.html">
@@ -155,109 +193,48 @@
     </nav>
 
     <section class="home">
-      <div class="text">List Profile</div>
+      <div class="text">Home</div>
 
-      <div class="card-container">
-        <div class="container py-2">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="card mb-4 shadow">
-                <div class="card-body text-center">
-                  <h5 class="my-3">Ariff Azri</h5>
-                  <p class="text-muted mb-1">CDIM262</p>
-                  <p class="text-muted mb-1">Bachelor of Information Science (Hons) Information Systems Management </p>
-                  <hr>
-                  <div class="d-flex justify-content-center mb-2">
-                    <a href="pdf/course.pdf" download="course_outline" class="btn btn-outline-danger" role="button" aria-pressed="true">
-                        Course Outline <i class="fa-regular fa-file-pdf"></i>
-                    </a>
-                        
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="card mb-4">
-                <div class="card-body shadow">
-                    <div class="row">
-                        <div class="col-sm-3">
-                          <p class="mb-0">Student ID</p>
+      <section class="hero-section">
+    <div class="container">
+        <h1>Welcome to Universiti Teknologi MARA (UiTM)</h1>
+    </div>
+</section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-light">
+        <p><div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Undergraduate</h5>
+                            <p class="card-text">Explore our diverse undergraduate programs designed for future leaders.</p>
                         </div>
-                        <div class="col-sm-9">
-                          <p class="text-muted mb-0">2024556419</p>
+                    </div>
+                </div></p>
+
+                <p><div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Postgraduate</h5>
+                            <p class="card-text">Advance your career with our postgraduate offerings.</p>
                         </div>
-                      </div>
-                    <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Full Name</p>
                     </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">ARIFF AZRI BIN ZAHARRUDIN</p>
+                </div></p>
+
+                <p><div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Professional Courses</h5>
+                            <p class="card-text">Upgrade your skills with our professional development courses.</p>
+                        </div>
                     </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Date of Birth</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">17 NOVEMBER 2003</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Email</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">ariff03@gmail.com</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Student Email</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">2024556419@student.uitm.edu.my</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Phone</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">011-60825548</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Semester</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">4</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Advisor</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">FARRAH DIANA BINTI SAIFUL BAHRY</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
+                </div></p>
             </div>
-          </div>
         </div>
+    </section>
 
-      </div>
   </section>
     
   <footer>
