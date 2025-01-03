@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="card.css">
+
+
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">UiTM e-Profile</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home.html">
+                            <i class='bx bxs-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="digital.html">
+                            <i class='bx bxs-id-card icon'></i>
+                            <span class="text nav-text">Digital ID</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                    
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+      <div class="text">Student Digital ID >Mohammad Arfan</div>
+
+      <div class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="img/vectorr.jpg" class="vector-img">
+    
+                    <div class="row">
+                        <img src="img/arfan.png" width="120px">
+                    </div>
+    
+                    <div class="row card-no">
+                        <p>2024542287</p>
+                    </div>
+    
+                    <div class="row card-holder">
+                        <p>BACHELOR OF INFORMATION SCIENCE (HONOURS) INFORMATION SYSTEMS MANAGEMENT</p>
+                    </div>
+                
+                </div>
+    
+                <div class="back">
+                    <img src="img/UiTMSelangor.jpg" class="uitm-img">
+                    <div class="bar"></div>
+                  
+                    <div class="row card-text">
+                        <p>MOHAMMAD ARFAN HAZIQ BIN RAZLAN	</p>
+                    </div>
+                
+                    <div class="row card-text">
+                        <p>CDIM262</p>
+                    </div>
+    
+                    <div class="row card-text">
+                        <p>UiTM Kampus Puncak Perdana</p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+      </div>
+  </section>
+    
+  <footer>
+    <div class="footer-content">
+        <p>&copy; 2025 UiTM Student e-profile. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <!--js-->
+    <script>
+        const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        });
+
+        modeSwitch.addEventListener("click", () => {
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                modeText.innerText = "Light mode";
+            } else {
+                modeText.innerText = "Dark mode";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.team-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 310px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.text-muted {
+    color: #868e96 !important;
+}
+
+@media (max-width: 768px) {
+    .team-section {
+        padding: 40px 20px;
+    }
+
+    .card {
+        height: 300px;
+        width: 250px;
+    }
+
+    .card-img-top {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        height: 280px;
+        width: 230px;
+    }
+
+    .card-img-top {
+        width: 90px;
+        height: 90px;
+    }
+}

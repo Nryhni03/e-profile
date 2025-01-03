@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+
+<style>
+    /* ===== Team Card ===== */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+    
+    .card {
+      background-color: #ffffff;
+      color: #000000;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .card-body {
+      padding: 15px;
+    }
+    
+    .card-img-top {
+        width: 30%;
+        height: 20px;
+        object-fit: cover;
+        border-radius: 250px;  /* Add this line to make the image frame round */
+      }
+      
+      .card-img-top {
+        width: 90%;
+        height: 200px;
+        object-fit: cover;
+        margin: 20px auto 0;  /* Centers the image horizontally */
+        border-radius: 150px;  /* Keeps the round frame */
+      }
+      
+    
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    
+    .card-text {
+      font-size: 14px;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    @media (max-width: 768px) {
+      .card-container {
+          grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .card-container {
+          grid-template-columns: 1fr;
+      }
+    }
+    </style>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">UiTM e-Profile</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home.html">
+                            <i class='bx bxs-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="digital.html">
+                            <i class='bx bxs-id-card icon'></i>
+                            <span class="text nav-text">Digital ID</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                    
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+      <div class="text">Student Digital ID</div>
+
+      <div class="card-container">
+
+          <div class="card">
+                <div class="card-body" onclick="window.location.href='sc2.html';" style="cursor: pointer;">
+                  <h5 class="card-title">AISY ISKANDAR</h5>
+                  <p class="card-text">2024786269</p>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body" onclick="window.location.href='sc3.html';" style="cursor: pointer;">
+                <h5 class="card-title">ARFAN HAZIQ</h5>
+                <p class="card-text">2024542287</p>
+            </div>
+        </div>
+    
+
+          <div class="card">
+            <div class="card-body" onclick="window.location.href='sc4.html';" style="cursor: pointer;">
+                <h5 class="card-title">ARIFF AZRI</h5>
+                  <p class="card-text">2024556419</p>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body" onclick="window.location.href='sc5.html';" style="cursor: pointer;">
+                <h5 class="card-title">FATIN NURULAINNIE</h5>
+                <p class="card-text">2024779453</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body" onclick="window.location.href='sc6.html';" style="cursor: pointer;">
+                <h5 class="card-title">JOHANIES</h5>
+              <p class="card-text">2023485902</p>
+          </div>
+      </div>
+   
+        <div class="card">
+            <div class="card-body" onclick="window.location.href='sc7.html';" style="cursor: pointer;">
+                <h5 class="card-title">MUHAMMAD SYAKIR</h5>
+                <p class="card-text">2023626888</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-body" onclick="window.location.href='sc8.html';" style="cursor: pointer;">
+                <h5 class="card-title">NUR AUNI AQILAH</h5>
+                <p class="card-text">2024767217</p>
+            </div>
+        </div>
+
+      <div class="card">
+        <div class="card-body" onclick="window.location.href='sc9.html';" style="cursor: pointer;">
+            <h5 class="card-title">NUR NAJWA</h5>
+              <p class="card-text">2024553973</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body" onclick="window.location.href='studentcard.html';" style="cursor: pointer;">
+            <h5 class="card-title">NURUL AYU HANANI</h5>
+            <p class="card-text">2024916777</p>
+        </div>
+    </div>
+
+      <div class="card">
+        <div class="card-body" onclick="window.location.href='sc10.html';" style="cursor: pointer;">
+            <h5 class="card-title">NURUL NAZIHA</h5>
+            <p class="card-text">2024766977</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body" onclick="window.location.href='sc11.html';" style="cursor: pointer;">
+            <h5 class="card-title">NOORDINI AKILAH</h5>
+            <p class="card-text">2024745837</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body" onclick="window.location.href='sc12.html';" style="cursor: pointer;">
+            <h5 class="card-title">	NOOR ATHIRAH</h5>
+            <p class="card-text">2024556841</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body" onclick="window.location.href='sc13.html';" style="cursor: pointer;">
+            <h5 class="card-title">SHAZRIEHA</h5>
+            <p class="card-text">2024530829</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body" onclick="window.location.href='sc14.html';" style="cursor: pointer;">
+            <h5 class="card-title">SITI NUR BALQIS</h5>
+            <p class="card-text">2024767107</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body" onclick="window.location.href='sc14.html';" style="cursor: pointer;">
+            <h5 class="card-title">UMI AISYAH </h5>
+            <p class="card-text">2024544873</p>
+        </div>
+    </div>
+
+
+      </div>
+  </section>
+    
+  <footer>
+    <div class="footer-content">
+        <p>&copy; 2025 UiTM Student e-profile. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <!--js-->
+    <script>
+        const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        });
+
+        modeSwitch.addEventListener("click", () => {
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                modeText.innerText = "Light mode";
+            } else {
+                modeText.innerText = "Dark mode";
+            }
+        });
+    </script>
+</body>
+</html>
